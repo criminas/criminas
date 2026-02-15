@@ -1,74 +1,69 @@
 # Contributing to Criminas
 
-First off, thank you for considering contributing to Criminas! It's people like you that make Criminas such a great tool.
+First off, thank you for considering contributing to Criminas! We are a community-driven organization building open source tools for a freer, more secure web. Your contributions help make that vision a reality.
 
-Criminas is an open-source project, and we welcome contributions of all kinds, including:
-- Reporting bugs
-- Suggesting new features
-- Improving documentation
-- Submitting pull requests
+This guide applies to all repositories under the Criminas organization, including our website, CLI tools, core infrastructure, and security projects.
 
 ## Code of Conduct
 
-By participating in this project, you agree to abide by our Code of Conduct. We expect all contributors to be respectful and constructive in their interactions.
+By participating in this project, you agree to abide by our Code of Conduct. We expect all contributors to be respectful, constructive, and inclusive in their interactions.
 
 ## How Can I Contribute?
 
-### Reporting Bugs
+### Bug Reports & Security
 
-Before reporting a bug, please search the existing issues to see if it has already been reported. If it hasn't, please open a new issue and include:
-- A clear and descriptive title
-- Steps to reproduce the bug
-- Expected behavior and actual results
-- Screenshots or screen recordings (if applicable)
-- Information about your environment (OS, browser, etc.)
+If you find a bug, please search the project's issue tracker first. If it's a new issue, open a report with:
+- A descriptive title
+- Steps to reproduce
+- Expected vs. actual behavior
+- Environment details (OS, version, etc.)
 
-### Suggesting Enhancements
+**Security Vulnerabilities:** Please do not report security vulnerabilities via public issues. Instead, email us directly at [security@criminas.org](mailto:security@criminas.org).
 
-If you have an idea for a new feature or an improvement to an existing one, please open a new issue and include:
-- A clear and descriptive title
-- An explanation of the proposed enhancement
-- The reasoning behind the suggestion
-- Any potential alternatives you've considered
+### Feature Requests
 
-### Submitting Pull Requests
+We love new ideas! If you have a suggestion:
+- Check if it's been proposed before.
+- Open an issue describing the "Why" and "How".
+- Explain the problem it solves for users.
 
-1. **Fork the repository** to your own GitHub account.
-2. **Clone the fork** to your local machine.
-3. **Create a new branch** for your changes. Use a descriptive name like `feature/new-button` or `fix/typo`.
-4. **Make your changes** and ensure they follow our style guidelines.
-5. **Commit your changes** with clear and concise commit messages.
-6. **Push the branch** to your fork on GitHub.
-7. **Open a Pull Request** against our `main` branch.
+### Documentation & Translations
 
-## Development Setup
+Good documentation is as important as good code. We welcome improvements to our guides, READMEs, and API references. If you're multilingual, help us reach more people by translating our documentation.
 
-Criminas is built with [Astro](https://astro.build/) and Vanilla CSS.
+### Code Contributions
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+1. **Find an Issue**: Look for `good first issue` or `help wanted` tags.
+2. **Fork & Clone**: Pull the code to your local environment.
+3. **Branch**: Create a descriptive branch (e.g., `feature/secure-handshake`).
+4. **Code**: Write clear, documented code. Ensure you follow the project's specific style guide.
+5. **Test**: Never submit a PR without tests. Ensure all existing tests pass.
+6. **PR**: Open a Pull Request with a clear description of your changes.
 
-2. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
+## Development Ecosystem
 
-3. **Build the project**:
-   ```bash
-   npm run build
-   ```
+Criminas uses a variety of technologies depending on the project's goals:
 
-## Style Guidelines
+- **Web**: Astro, TypeScript, Vanilla CSS
+- **Core Systems**: Go, Rust, C++
+- **Security Tools**: Python, Go
+- **Infrastructure**: Terraform, Docker, Kubernetes
 
-- Use clean, semantic HTML.
-- Follow the existing CSS structure and naming conventions.
-- Ensure all new features are responsive and work across major browsers.
-- Document any new code or significant changes.
+### Project-Specific Setup
 
-## Feedback
+Since each project has its own environment, please always refer to the **`README.md`** or **`DEVELOPMENT.md`** file within the specific repository for setup instructions, build commands, and testing procedures.
 
-We value your feedback and suggestions. If you have any questions or comments, feel free to open an issue or reach out to us at [hello@criminas.org](mailto:hello@criminas.org).
+## Style & Quality Standards
 
-Thank you for contributing!
+- **Consistency**: Follow the linter and formatter settings defined in the project (e.g., `rustfmt`, `gofmt`, `prettier`).
+- **Simplicity**: We value clean, readable code over clever hacks.
+- **Testing**: We aim for high test coverage. New features must include unit and/or integration tests.
+- **Documentation**: New code should be self-documenting, and public APIs must have clear comments.
+
+## Community
+
+Join the conversation and stay updated:
+- **GitHub**: [github.com/criminas](https://github.com/criminas)
+- **Email**: [hello@criminas.org](mailto:hello@criminas.org)
+
+Thank you for being part of Criminas!
