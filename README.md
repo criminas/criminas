@@ -1,69 +1,146 @@
-# Contributing to Criminas
+# Contributing to Arcbase
 
-First off, thank you for considering contributing to Criminas! We are a community-driven organization building open source tools for a freer, more secure web. Your contributions help make that vision a reality.
+First off, thank you for considering contributing to Arcbase! Arcbase is a community-driven project focused on building streamlined, performance-oriented Windows optimization tools. Your contributions help improve reliability, transparency, and user control.
 
-This guide applies to all repositories under the Criminas organization, including our website, CLI tools, core infrastructure, and security projects.
+This guide applies to all repositories under the Arcbase organization, including ArcOS and related tooling.
 
 ## Code of Conduct
 
-By participating in this project, you agree to abide by our Code of Conduct. We expect all contributors to be respectful, constructive, and inclusive in their interactions.
+By participating in this project, you agree to maintain a respectful, constructive, and inclusive environment. Collaboration should remain professional and focused on improving the project.
 
 ## How Can I Contribute?
 
-### Bug Reports & Security
+### Bug Reports
 
-If you find a bug, please search the project's issue tracker first. If it's a new issue, open a report with:
-- A descriptive title
-- Steps to reproduce
-- Expected vs. actual behavior
-- Environment details (OS, version, etc.)
+If you find a bug:
 
-**Security Vulnerabilities:** Please do not report security vulnerabilities via public issues. Instead, email us directly at [security@criminas.org](mailto:security@criminas.org).
+1. Search existing issues first.
+2. If it’s new, open an issue including:
+   - A clear title
+   - Steps to reproduce
+   - Expected vs actual behavior
+   - Windows version/build
+   - ArcOS version
+
+Be specific. Clear reports help us resolve issues faster.
+
+### Security Concerns
+
+Do not report security-related concerns via public issues.
+
+Instead, contact:
+
+security@arcbase.dev
+
+(Replace with your actual contact email before publishing.)
 
 ### Feature Requests
 
-We love new ideas! If you have a suggestion:
-- Check if it's been proposed before.
-- Open an issue describing the "Why" and "How".
-- Explain the problem it solves for users.
+Before submitting a feature request:
 
-### Documentation & Translations
+- Check if it has already been proposed.
+- Explain the problem it solves.
+- Describe the expected behavior.
+- Consider compatibility with Windows 10 and 11.
 
-Good documentation is as important as good code. We welcome improvements to our guides, READMEs, and API references. If you're multilingual, help us reach more people by translating our documentation.
+Arcbase prioritizes:
+- Stability
+- Reversibility
+- Update compatibility
+- Clean system modification practices
+
+### Documentation Contributions
+
+Clear documentation is critical for system-level tools.
+
+You can help by:
+
+- Improving README clarity
+- Adding usage examples
+- Expanding troubleshooting sections
+- Writing rollback guidance
+- Translating documentation
 
 ### Code Contributions
 
-1. **Find an Issue**: Look for `good first issue` or `help wanted` tags.
-2. **Fork & Clone**: Pull the code to your local environment.
-3. **Branch**: Create a descriptive branch (e.g., `feature/secure-handshake`).
-4. **Code**: Write clear, documented code. Ensure you follow the project's specific style guide.
-5. **Test**: Never submit a PR without tests. Ensure all existing tests pass.
-6. **PR**: Open a Pull Request with a clear description of your changes.
+1. Find an Issue  
+   Look for `good first issue` or `help wanted`.
+
+2. Fork & Clone  
+   Fork the repository and clone it locally.
+
+3. Create a Branch  
+   Use descriptive naming, for example:
+   - feature/ui-optimization
+   - fix/service-detection
+   - improvement/uninstall-logic
+
+4. Follow Project Structure  
+   - Keep modules modular.
+   - Respect config-based toggles.
+   - Avoid hardcoding values where possible.
+
+5. Test in a VM  
+   Never submit changes without testing in:
+   - A clean Windows 10 or 11 VM
+   - After reboot
+   - After Windows Update check
+
+6. Open a Pull Request  
+   Include:
+   - A clear summary
+   - Windows build tested on
+   - Before/after behavior
+   - Screenshots (if UI-related)
 
 ## Development Ecosystem
 
-Criminas uses a variety of technologies depending on the project's goals:
+Arcbase primarily uses:
 
-- **Web**: Astro, TypeScript, Vanilla CSS
-- **Core Systems**: Go, Rust, C++
-- **Security Tools**: Python, Go
-- **Infrastructure**: Terraform, Docker, Kubernetes
+- PowerShell — system configuration and automation
+- Batch scripts — launchers and privilege elevation
+- JSON — configuration control
+- Git — version control
 
-### Project-Specific Setup
+Future tooling may include:
 
-Since each project has its own environment, please always refer to the **`README.md`** or **`DEVELOPMENT.md`** file within the specific repository for setup instructions, build commands, and testing procedures.
+- Installer packaging
+- GUI frontend (WPF / WinUI)
+- Automated test validation in virtual environments
 
 ## Style & Quality Standards
 
-- **Consistency**: Follow the linter and formatter settings defined in the project (e.g., `rustfmt`, `gofmt`, `prettier`).
-- **Simplicity**: We value clean, readable code over clever hacks.
-- **Testing**: We aim for high test coverage. New features must include unit and/or integration tests.
-- **Documentation**: New code should be self-documenting, and public APIs must have clear comments.
+- Keep scripts modular and readable.
+- Avoid unsafe system modifications.
+- Do not remove servicing stack components.
+- Always provide uninstall or rollback paths.
+- Prefer policy-based configuration over binary tampering.
+
+Arcbase prioritizes long-term system stability over aggressive stripping.
+
+## Release Guidelines
+
+Before submitting features that:
+
+- Modify services
+- Change system policies
+- Adjust system behavior
+
+You must test:
+
+- Reboot stability
+- Windows Update functionality
+- Defender integrity
+- Driver installation
+- New user account behavior
 
 ## Community
 
-Join the conversation and stay updated:
-- **GitHub**: [github.com/criminas](https://github.com/criminas)
-- **Email**: [hello@criminas.org](mailto:hello@criminas.org)
+Project resources:
 
-Thank you for being part of Criminas!
+GitHub: https://github.com/arcbase  
+Contact: hello@arcbase.dev  
+
+(Replace URLs and emails before publishing.)
+
+Thank you for contributing to Arcbase.
