@@ -30,7 +30,7 @@ Do not report security-related concerns via public issues.
 
 Instead, contact:
 
-security@arcbase.dev
+security@arcbase.one
 
 (Replace with your actual contact email before publishing.)
 
@@ -139,7 +139,7 @@ You must test:
 Project resources:
 
 GitHub: https://github.com/arcbase  
-Contact: hello@arcbase.dev  
+Contact: hello@arcbase.one  
 
 (Replace URLs and emails before publishing.)
 
